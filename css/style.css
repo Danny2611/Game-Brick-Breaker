@@ -1,0 +1,247 @@
+/* CSS CHOOSE-LEVEL */
+
+body {
+  padding-top: 50px;
+}
+
+#container {
+  display: block;
+  width: 900px;
+  height: 600px;
+  margin: auto;
+  position: relative;
+  background: url("../img/back-ground.jpg");
+}
+
+#start {
+  display: flex;
+  height: 300px;
+  justify-content: center;
+  align-items: center;
+  height: 500px;
+}
+#start:hover {
+  cursor: pointer;
+  opacity: 0.7;
+}
+
+#notif {
+  position: absolute;
+  width: 900px;
+  height: 600px;
+  background: rgba(0, 0, 0, 0.5);
+  left: 0;
+  bottom: 0;
+}
+
+#container-notif {
+  position: relative;
+  width: 500px;
+  height: 300px;
+  background: url("../img/bg2.png");
+  background-size: cover;
+  padding: 10px;
+  border-radius: 10px;
+  margin-left: 22%;
+  margin-top: 10%;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+#container-notif .btn_close-notif {
+  position: absolute;
+  right: 0;
+  top: 0;
+  border: none;
+  background-color: #48b8fa;
+  border-radius: 9px;
+  cursor: pointer;
+}
+
+#sub-choose {
+  position: absolute;
+  top: 25%;
+  left: 20%;
+}
+#sub-choose .notif-1 {
+  width: 300px;
+  height: 40px;
+  background-color: blue;
+  border-radius: 10px;
+  color: #fff;
+  margin: 20px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#sub-choose .notif-1:hover {
+  opacity: 0.5;
+  cursor: pointer;
+}
+#sub-choose .notif-2 {
+  width: 300px;
+  height: 40px;
+  background-color: blue;
+  border-radius: 10px;
+  color: #fff;
+  margin: 20px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#sub-choose .notif-2:hover {
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+.text-choose {
+  line-height: 40px;
+  font-size: 20px;
+  font-weight: 600;
+  min-width: 150px;
+}
+
+.notif-1 img {
+  width: 10%;
+}
+
+.notif-2 img {
+  width: 10%;
+}
+
+#choose-level {
+  display: none;
+  position: absolute;
+  width: 520px;
+  height: 320px;
+  background-color: aqua;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  border-radius: 10px;
+}
+#choose-level .btn_close {
+  position: absolute;
+  right: 0;
+  top: 0;
+  background-color: aqua;
+  border: none;
+}
+
+#about-me {
+  display: none;
+  position: absolute;
+  width: 520px;
+  height: 320px;
+  background-color: aqua;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  border-radius: 10px;
+}
+
+.text-level {
+  color: BLUE;
+  font-weight: 700;
+  text-align: left;
+  letter-spacing: 2px;
+  font-style: italic;
+  margin-left: 10px;
+  margin-top: 20px;
+}
+
+.row-1 {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.row-2 {
+  display: flex;
+  justify-content: center;
+}
+
+.dial-pad .button {
+  display: block;
+  width: 60px;
+  height: 60px;
+  background-color: hsla(83, 71.88%, 39.67%, 0.98);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  margin: 20px 20px;
+  font-size: 24px;
+}
+.dial-pad button:hover {
+  background-color: yellow;
+  cursor: pointer;
+}
+
+.popup .text-about {
+  position: absolute;
+  top: 30%;
+  width: 500px;
+  line-height: 1.7;
+  font-size: 16px;
+}
+.popup .btn_close {
+  position: absolute;
+  right: 0;
+  top: 0;
+  border-radius: 10px;
+  border: none;
+  background-color: aqua;
+}
+
+.btn_close-notif:hover {
+  opacity: 0.5;
+}
+
+.btn_close:hover {
+  opacity: 0.5;
+}
+
+#endgame {
+  display: none;
+  position: absolute;
+  width: 900px;
+  height: 600px;
+  background: rgba(0, 0, 0, 0.5);
+  left: 0;
+  bottom: 0;
+}
+#endgame #lose {
+  display: block;
+  position: absolute;
+  transform: translate(5%, 2%);
+}
+#endgame #won {
+  display: none;
+  position: absolute;
+  width: 90%;
+  transform: translate(39%, 28%);
+}
+#endgame #restart {
+  position: absolute;
+  top: 57%;
+  width: 110px;
+  height: 30px;
+  background-color: aqua;
+  border-radius: 10px;
+  line-height: 30px;
+  color: #fff;
+  text-align: center;
+  left: 42%;
+  cursor: pointer;
+}
+#endgame #restart:hover {
+  opacity: 0.7;
+}
+
+#lose .img-lose {
+  width: 90%;
+}
+
+#won .image-win {
+  width: 30%;
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,111 @@
+
+<!-- 21130584-Lê Quốc Trung-0947863260-DH21DTD -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Ping Pong Game</title>
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,300;0,500;1,100;1,200;1,300&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap&subset=vietnamese"
+        rel="stylesheet">
+
+</head>
+
+<body>
+    <div id="start" onclick="startGame()">
+        <img src="img/start.png">
+    </div>
+
+    <div id="container" style="display: none;">
+        <canvas id="mycanvas" width="900" height="600"></canvas>
+
+        <div id="notif">
+            <div id="container-notif">
+                <button class="btn_close-notif">
+                    <i class="fa-solid fa-circle-xmark"  onclick="closeButtonNotif()"></i>
+                </button>   
+                <div id="sub-choose">
+                    <div id="choose-1"class="notif-1" onclick="chooseNotif1()">
+                        <img src="./img/1.png" alt="">
+                        <span> <p class="text-choose">Choose Level</p> </span>
+                    </div>
+                    <div id="choose-2" class="notif-2"  onclick="chooseNotif2()">
+                        <img src="./img/2.png" alt="">
+                        <span><p class="text-choose">About me</p></span>
+                    </div>
+                </div>
+
+                <div id="choose-level">
+                    <div class="dial-pad">
+                        
+                        <button class="btn_close">
+                            <i class="fa-solid fa-circle-xmark"  onclick="closeChooseLevel()"></i>
+                        </button>
+                        <div class="row-1">
+                            <button class="button" onclick="chooseLevel(1)">1</button>
+                            <button class="button" onclick="chooseLevel(2)">2</button>
+                            <button class="button" onclick="chooseLevel(3)">3</button>
+                        </div>
+                        <div class="row-2">
+                            <button class="button" onclick="chooseLevel(4)">4</button>
+                            <button class="button" onclick="chooseLevel(5)">5</button>
+                            <button class="button" onclick="chooseLevel(6)">6</button>
+                        </div>
+                    </div>
+                </div>
+                <div id="about-me" >
+                    <div class="popup">
+                        <div class="text-about">Xin chào! Tôi là Lê Quốc Trung, sinh viên năm 3 học chuyên ngành Công nghệ phần mềm Trường đại học Nông Lâm, là người đã viết code cho trò chơi này. 
+                            Tôi là một người đam mê lập trình và sáng tạo, và Ping Pong là một trong những dự án tâm huyết mà tôi dành nhiều thời gian để xây dựng.
+                            Ngoài việc viết code, tôi còn thích du lịch, âm nhạc và đọc sách. Hy vọng bạn sẽ thích trò chơi của tôi 
+                            và có những giây phút thú vị! </div>
+
+                        <button class="btn_close">
+                            <i class="fa-solid fa-circle-xmark"  onclick="closeButtonAbout()"></i>
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+
+
+        </div>
+         <div id="endgame">
+        <div id="lose">
+            <img src="img/gameover.png" class="img-lose">
+        </div>
+        <div id="won">
+            <img src="img/victory.jpg" class="image-win">
+        </div>
+
+
+        <div id="restart"> <i class="fa-solid fa-rotate-right"></i> Play Again?</div>
+    </div>
+
+
+
+
+    </div>
+
+
+
+    </div>
+   
+    </div>
+    </div>
+
+    <script src="./js/demo.js"></script>
+</body>
+
+</html>
